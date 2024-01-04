@@ -1,0 +1,27 @@
+---
+// const platform = "github"
+const username = "dmedina2150dev"
+import Social from './Social.astro';
+---
+
+<style>
+    footer {
+      display: flex;
+      position: sticky;
+      bottom: 20px;
+      gap: 1rem;
+      margin-top: 5rem;
+      background-color: rgb(2, 10, 82);
+      color: whitesmoke;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+</style>
+
+<footer>
+    <p>¡Más información sobre mis proyectos en
+        <Social platform="twitter" username={username} />
+        <Social platform="github" username={username} />
+        <Social platform="youtube" username={username} />
+    </p>
+</footer>
