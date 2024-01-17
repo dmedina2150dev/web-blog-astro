@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+# Se elimina la linea ya no es necesaria al usar la collection
 title: Mi cuarta entrada en el blog
 author: Alumno de Astro
 description: "Esta entrada aparecerá sola!"
