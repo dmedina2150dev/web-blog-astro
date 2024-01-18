@@ -15,7 +15,9 @@ const { tags } = frontmatter;
     <!-- <h1>{frontmatter.title}</h1> -->
     <p>Publicado el: {frontmatter.pubDate.toString().slice(0,10)}</p>
     <p transition:animate={fade({ duration: '2s' })}><em>{frontmatter.description}</em></p>
-    <p>Escrito por {frontmatter.author}</p>
+
+    <!--TODO: Como aqui no esta configurado [data-astro-reload] no bloquea la animacion -->
+    <p>Escrito por:  <a href="/about/"> {frontmatter.author} </a></p>
     <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
     <slot />
 
